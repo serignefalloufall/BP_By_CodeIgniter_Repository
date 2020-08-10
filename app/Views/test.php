@@ -5,7 +5,8 @@
 	<title>Welcome to CodeIgniter 4!</title>
 
 
-<style>
+	
+    <style>
 
 *{
     box-sizing: border-box;
@@ -55,13 +56,13 @@ a{
 <body>
 
 
-    <nav>
-        <ul class="menu">
-            <li class="logo"><a href="#">La banque du peuple</a></li>
-            <li class="item"><a href="<?php echo site_url('Client/add') ?>">Gestion des clients</a></li>
-            <li class="item"><a href="<?php echo site_url('Compte/add') ?>">Gestion des comptes client</a></li>
-        </ul>
-    </nav>
+<nav>
+            <ul class="menu">
+                <li class="logo"><a href="#">La banque du peuple</a></li>
+                <li class="item"><a href="{$url_base}Client/add">Gestion des clients</a></li>
+                <li class="item"><a href="{$url_base}Compte/add">Gestion des comptes client</a></li>
+            </ul>
+        </nav>
 
 <script>
 	function toggleMenu() {

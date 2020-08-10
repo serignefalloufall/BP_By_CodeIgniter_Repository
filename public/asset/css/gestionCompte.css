@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    
+    margin: 0;
+}
+body{
+    background: linear-gradient(rgba(13, 23, 37, 0.6),rgba(7, 7, 7, 0.6)),url(../image/img.png);
+    height: 100vh;
+    -webkit-background-size:cover;
+    background-size:cover ;
+    background-position: center center;
+    height: 100vh;
+   }
+
+.contenue{
+   display: flex;/*permet de changer la maniere d'affichage par defaut*/
+   flex-direction: row;/*pour indiquer la maniere d'afficher les element vertical ou horizontal*/
+   /*flex-wrap: wrap;pour aller a la ligne lorsque le contenue est plein*/
+   justify-content: center;/*permet de centrer les elm du contenue au l'axe principale*/
+
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+/*Pour gerer l'affichage des erreur*/
+.contenue .error{
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    font-size: 16px;
+    transition: all 0.5s ease;
+    width: 100%;
+    
+}
+
+/*Les Media Query*/
+@media screen and (max-width: 750px){
+    /*Tous les ecran avec une taile de 750px
+    notre contenue va prendre 100% de la largeur*/
+    .contenue{
+        flex-basis: 100%;
+    }
+}
+
+input[type="text"]{
+    outline: none;
+    transition: all 0.5s ease;
+    font-size: 18px;
+    width: 200px;
+    float: right;
+}
+
+.formCompte{
+    display: flex;
+}
+.fieldset{
+    display: flex;
+    width: 500px;
+    height: auto; 
+    border: #02a1a1 solid 4px;  
+   }
+.itemFieldset{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.legend{
+    color: #02a1a1; 
+    font-size: 25px;
+    font-weight: 1000;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+   }
+
+   select{
+    font-size: 18px;
+    width: 200px;
+    float: right;
+}
+
+label{
+    color: #fff;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    
+   }
+
+.btn{
+
+    border: 3px solid #02a1a1;
+    width: 500px;   
+    height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid #02a1a1;
+    background: none;
+    color: #02a1a1;
+    border-radius: 40px;
+    font-weight: 900;
+    text-transform: capitalize;
+    
+    }
+ .btnRechercher{
+
+        border: 3px solid #02a1a1;
+        width: 500px;   
+        height: 50px;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: bold;
+        border: 2px solid #02a1a1;
+        background: none;
+        color: #02a1a1;
+        border-radius: 40px;
+        font-weight: 900;
+        text-transform: capitalize;
+        
+        }    
+
+   
+
+    
+    /*
+    pour cacher les radio par defaut
+    */
+    
+    input[type="date"]{
+        font-size: 18px;
+        width: 200px;
+        float: right;
+    }
+    
+    
+   
+   
+   
+    .frais{
+        display: none;
+        
+       }
+       .agio{
+        display: none;
+       }
+       .dfermuture{
+        display: none;
+       }
+       

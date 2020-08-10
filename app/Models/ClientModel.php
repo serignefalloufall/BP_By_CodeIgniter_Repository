@@ -2,9 +2,12 @@
 use CodeIgniter\Database\ConnectionInterface;
 use CodeIgniter\Model;
  
-class RegionModel extends Model
+class ClientModel extends Model
 {
-    protected $table = 'region';
+    protected $table = 'client';
  
-    protected $allowedFields = ['nom'];
+    protected $allowedFields = ['type_client_id','employeur_id','nom',
+                                'prenom','adresse','tel','email',
+                                'profession','salaire','password'];
+
 }
