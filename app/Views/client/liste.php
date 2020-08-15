@@ -9,7 +9,7 @@
 <body>
  
 <div class="container mt-5">
-    <a href="<?php echo site_url('Client/create') ?>" class="btn btn-success mb-2">Create</a>
+    <a href="<?php echo site_url('Client/add') ?>" class="btn btn-success mb-2">Create</a>
     <?php
      if(isset($_SESSION['msg'])){
         echo $_SESSION['msg'];
@@ -35,8 +35,8 @@
              <td><?php echo $client['prenom']; ?></td>
              <td><?php echo $client['adresse']; ?></td>
              <td>
-              <a href="<?php echo base_url('Client/edit/'.$client['id']);?>" class="btn btn-success">Edit</a>
-              <a href="<?php echo base_url('Client/delete/'.$client['id']);?>" class="btn btn-danger">Delete</a>
+              <a href="#" class="btn btn-success">Edit</a>
+              <a href="#" class="btn btn-danger">Delete</a>
               </td>
           </tr>
          <?php endforeach; ?>
